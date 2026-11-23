@@ -1,0 +1,191 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="University Student Activity Management Portal">
+
+    <title>Student Activity Portal</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Student Activity Management Portal</h1>
+        <p>Explore Events, Activities and Opportunities</p>
+
+        <nav aria-label="Main Navigation">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#events">Upcoming Events</a></li>
+                <li><a href="#activities">Activities</a></li>
+                <li><a href="#register">Register</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <section id="home">
+            <h2>Welcome to Our University</h2>
+            <p>
+                Discover exciting university events, participate in
+                activities and develop your skills.
+            </p>
+        </section>
+
+        <section id="events">
+            <h2>Upcoming Events</h2>
+
+            <article>
+                <h3>Technical Fest</h3>
+                <p>
+                    Participate in coding competitions, technical
+                    quizzes and innovative project exhibitions.
+                </p>
+                <p><strong>Date:</strong> 25 December 2026</p>
+            </article>
+
+            <article>
+                <h3>Sports Meet</h3>
+                <p>
+                    Take part in exciting indoor and outdoor sports
+                    competitions.
+                </p>
+                <p><strong>Date:</strong> 28 December 2026</p>
+            </article>
+
+            <article>
+                <h3>Cultural Fest</h3>
+                <p>
+                    Showcase your talents through music, dance and
+                    cultural performances.
+                </p>
+                <p><strong>Date:</strong> 30 December 2026</p>
+            </article>
+        </section>
+
+        <section id="activities">
+            <h2>University Activities</h2>
+
+            <article>
+                <h3>Technical Clubs</h3>
+                <p>Join coding, robotics and innovation clubs.</p>
+            </article>
+
+            <article>
+                <h3>Social Activities</h3>
+                <p>
+                    Participate in volunteering and community
+                    development programs.
+                </p>
+            </article>
+        </section>
+
+        <aside>
+            <h2>Important Information</h2>
+            <p>
+                Students are encouraged to register for events
+                before the registration deadline.
+            </p>
+        </aside>
+
+        <section id="register">
+            <h2>Student Event Registration</h2>
+
+            <form id="registrationForm">
+
+                <label for="studentName">Student Name:</label>
+                <input type="text" id="studentName"
+                    name="studentName"
+                    placeholder="Enter your full name"
+                    autocomplete="name" required>
+
+                <br><br>
+
+                <label for="email">Email Address:</label>
+                <input type="email" id="email"
+                    name="email"
+                    placeholder="Enter your email"
+                    autocomplete="email" required>
+
+                <br><br>
+
+                <label for="event">Select Event:</label>
+                <select id="event" name="event" required>
+                    <option value="">Choose an event</option>
+                    <option value="Technical Fest">Technical Fest</option>
+                    <option value="Sports Meet">Sports Meet</option>
+                    <option value="Cultural Fest">Cultural Fest</option>
+                </select>
+
+                <br><br>
+
+                <fieldset>
+                    <legend>Select Student Category:</legend>
+
+                    <input type="radio" id="ug"
+                        name="category"
+                        value="Undergraduate" required>
+                    <label for="ug">Undergraduate</label>
+
+                    <input type="radio" id="pg"
+                        name="category"
+                        value="Postgraduate">
+                    <label for="pg">Postgraduate</label>
+                </fieldset>
+
+                <br>
+
+                <fieldset>
+                    <legend>Select Your Interests:</legend>
+
+                    <input type="checkbox" id="coding"
+                        name="interests" value="Coding">
+                    <label for="coding">Coding</label>
+
+                    <input type="checkbox" id="sportsInterest"
+                        name="interests" value="Sports">
+                    <label for="sportsInterest">Sports</label>
+
+                    <input type="checkbox" id="music"
+                        name="interests" value="Music">
+                    <label for="music">Music</label>
+                </fieldset>
+
+                <br>
+
+                <label for="comments">Additional Comments:</label>
+                <br>
+
+                <textarea id="comments"
+                    name="comments"
+                    rows="4" cols="40"
+                    placeholder="Enter your comments here"></textarea>
+
+                <br><br>
+
+                <button type="submit">Register Now</button>
+                <button type="reset">Clear Form</button>
+
+            </form>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>
+            &copy; 2026 Student Activity Management Portal.
+            All Rights Reserved.
+        </p>
+        <p>Contact: university@example.com</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

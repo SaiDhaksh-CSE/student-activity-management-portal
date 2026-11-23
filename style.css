@@ -1,0 +1,287 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #fff5f5;
+    color: #333333;
+    line-height: 1.7;
+}
+
+header {
+    background: linear-gradient(135deg, #570000, #a30016, #e32636);
+    color: white;
+    text-align: center;
+    padding: 45px 20px 35px;
+    box-shadow: 0 5px 20px rgba(100, 0, 0, 0.2);
+}
+
+header h1 {
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    letter-spacing: 0.5px;
+}
+
+header p {
+    font-size: 17px;
+    color: #ffe5e5;
+    margin-bottom: 25px;
+}
+
+nav {
+    margin-top: 25px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+nav ul li a {
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    padding: 10px 22px;
+    border: 1px solid rgba(255, 255, 255, 0.35);
+    border-radius: 30px;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+
+nav ul li a:hover,
+nav ul li a:focus {
+    background: white;
+    color: #a30016;
+    transform: translateY(-3px);
+}
+
+main {
+    width: 90%;
+    max-width: 1150px;
+    margin: 40px auto;
+}
+
+section {
+    background: white;
+    padding: 30px;
+    margin-bottom: 30px;
+    border-radius: 14px;
+    box-shadow: 0 5px 22px rgba(120, 0, 0, 0.07);
+    border: 1px solid #ffe0e0;
+    transition: 0.3s ease;
+}
+
+section:hover {
+    box-shadow: 0 9px 28px rgba(120, 0, 0, 0.12);
+}
+
+section h2 {
+    color: #a30016;
+    font-size: 27px;
+    margin-bottom: 20px;
+    padding-bottom: 12px;
+    border-bottom: 2px solid #f5c5c5;
+}
+
+section h3 {
+    color: #b5122a;
+    margin-bottom: 10px;
+    font-size: 21px;
+}
+
+article {
+    background: linear-gradient(120deg, #fff6f6, #fffafa);
+    padding: 22px;
+    margin: 18px 0;
+    border-left: 5px solid #c41230;
+    border-radius: 9px;
+    transition: 0.3s ease;
+}
+
+article:hover {
+    transform: translateY(-4px);
+    background: #ffeded;
+    box-shadow: 0 6px 18px rgba(150, 0, 0, 0.09);
+}
+
+article p {
+    margin: 7px 0;
+}
+
+aside {
+    background: linear-gradient(120deg, #ffe1e1, #fff0f0);
+    padding: 28px;
+    margin-bottom: 30px;
+    border-radius: 12px;
+    border-left: 6px solid #b5122a;
+}
+
+aside h2 {
+    color: #920014;
+    margin-bottom: 10px;
+}
+
+form {
+    max-width: 750px;
+}
+
+form label {
+    display: inline-block;
+    margin-bottom: 7px;
+    font-weight: 600;
+    color: #4a2020;
+}
+
+form input[type="text"],
+form input[type="email"],
+form select,
+form textarea {
+    width: 100%;
+    padding: 13px 15px;
+    margin-top: 5px;
+    margin-bottom: 22px;
+    border: 1px solid #e6bcbc;
+    border-radius: 8px;
+    font-size: 15px;
+    background: #fffdfd;
+    color: #333;
+    transition: 0.3s ease;
+}
+
+form input[type="radio"],
+form input[type="checkbox"] {
+    margin: 8px 7px 8px 0;
+    accent-color: #c41230;
+}
+
+fieldset {
+    border: 1px solid #e6bcbc;
+    padding: 20px;
+    border-radius: 9px;
+    margin-bottom: 24px;
+    background: #fffafa;
+}
+
+legend {
+    font-weight: bold;
+    color: #a30016;
+    padding: 0 8px;
+}
+
+form textarea {
+    resize: vertical;
+    min-height: 110px;
+}
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus,
+a:focus {
+    outline: 3px solid #ff9a9a;
+    outline-offset: 3px;
+    border-color: #c41230;
+}
+
+button {
+    background: linear-gradient(135deg, #a30016, #df233b);
+    color: white;
+    border: none;
+    padding: 13px 28px;
+    margin: 10px 10px 0 0;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow: 0 4px 12px rgba(163, 0, 22, 0.2);
+    transition: 0.3s ease;
+}
+
+button:hover {
+    background: linear-gradient(135deg, #720010, #b5122a);
+    transform: translateY(-3px);
+    box-shadow: 0 7px 18px rgba(163, 0, 22, 0.3);
+}
+
+button[type="reset"] {
+    background: #555555;
+    box-shadow: none;
+}
+
+button[type="reset"]:hover {
+    background: #333333;
+}
+
+footer {
+    background: linear-gradient(135deg, #570000, #920014);
+    color: white;
+    text-align: center;
+    padding: 28px 20px;
+    margin-top: 40px;
+}
+
+footer p {
+    margin: 6px;
+    color: #ffe5e5;
+}
+
+@media (max-width: 600px) {
+    header {
+        padding: 30px 15px;
+    }
+
+    header h1 {
+        font-size: 26px;
+    }
+
+    header p {
+        font-size: 15px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    nav ul li a {
+        width: 180px;
+    }
+
+    main {
+        width: 94%;
+        margin: 22px auto;
+    }
+
+    section {
+        padding: 20px;
+    }
+
+    section h2 {
+        font-size: 23px;
+    }
+
+    article {
+        padding: 17px;
+    }
+
+    form {
+        max-width: 100%;
+    }
+
+    button {
+        width: 100%;
+        margin: 8px 0;
+    }
+}
